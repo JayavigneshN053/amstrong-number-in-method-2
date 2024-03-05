@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+    int a,sum,rem,b,t;
+    printf("Enter a:",a);
+    scanf("%d",&a);
+    sum=0;
+    t=a;
+    while(a>0)
+    {
+        rem=a%10;
+        sum=sum+rem*rem*rem;
+        a=a/10;
+    }
+    (sum==t)?printf("Amstrong"):printf("Not Amstrong");
+    return 0;
+}
